@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaDCO.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,7 @@ namespace CinemaDCO
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            LoginPage LoginPage = new Views.LoginPage();
         }
 
         protected override void OnStart()

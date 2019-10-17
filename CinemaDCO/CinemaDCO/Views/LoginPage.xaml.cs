@@ -20,6 +20,20 @@ namespace CinemaDCO.Views
         }
         private async void Login_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(TextUsuario.Text))
+            {
+                await DisplayAlert("Validación", "El nombre de usuario es requerido", "OK");
+                TextUsuario.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(TextPassword.Text))
+            {
+                await DisplayAlert("Validación", "La contraseña es requerida", "OK");
+                TextPassword.Focus();
+                return;
+            }
+
             await Navigation.PushAsync(new CarteleraPage());
         }
     }

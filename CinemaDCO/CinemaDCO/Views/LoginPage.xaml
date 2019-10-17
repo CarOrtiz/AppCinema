@@ -4,6 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="CinemaDCO.Views.LoginPage">
+             x:Class="CinemaDCO.Views.LoginPage"
+             Title="Login">
     
- </ContentPage>
+       <StackLayout Orientation="Vertical" Margin="55,120,50,140" Spacing="10">
+        <Image Source="imagen2.png" HeightRequest="100"/>
+          <Entry FontSize="Large" Placeholder="Usuario" x:Name="TextUsuario" MaxLength="10"/>
+          <Entry FontSize="Large" Placeholder="Password" IsEnabled="True" x:Name="TextPassword" IsPassword="True" MaxLength="10"/>
+          <Button Text="Ingresar"
+                Margin="0,0,50,0"
+                    VerticalOptions="EndAndExpand"
+                    CornerRadius="12"
+                    Clicked="Login_Click"/>
+       </StackLayout>
+    
+    
+    </ContentPage>

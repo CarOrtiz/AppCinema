@@ -15,6 +15,7 @@ namespace CinemaDCO.Views
         public CarteleraPage()
         {
             InitializeComponent();
+            
         }
     }
 }

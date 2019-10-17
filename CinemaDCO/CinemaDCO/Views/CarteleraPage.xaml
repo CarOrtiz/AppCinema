@@ -4,12 +4,44 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="CinemaDCO.Views.CarteleraPage">
-    <ContentPage.Content>
+             x:Class="CinemaDCO.Views.CarteleraPage"
+             Title="Cartelera">
+        
+   
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+            <ListView x:Name="lsvProductos" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <Image Source="{Binding Imagen}" Grid.Column="0" Grid.RowSpan="6" WidthRequest="50" HeightRequest="100"/>
+
+                                <Label Text="{Binding Nombre}" Grid.Column="1" Grid.Row="0" />
+                                <Label Text="{Binding Estreno}" Grid.Column="1" Grid.Row="1" />
+                                <Label Text="{Binding Genero}" Grid.Column="1" Grid.Row="2" />
+                                <Label Text="{Binding Recomendacion}" Grid.Column="1" Grid.Row="3" />
+                                <Label Text="{Binding Duracion}" Grid.Column="1" Grid.Row="4" />
+                                <Label Text="{Binding Cinema}" Grid.Column="1" Grid.Row="5" />                              
+                            
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+           </StackLayout>
 </ContentPage>

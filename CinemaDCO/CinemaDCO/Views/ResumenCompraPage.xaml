@@ -4,12 +4,110 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="CinemaDCO.Views.ResumenCompra">
+             x:Class="CinemaDCO.Views.ResumenCompra"
+             Title="ResumenCompra">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Vertical" >
+                <Image Source="venom.jpg" 
+                   Margin="39,30,30,30"/>
+
+                <Label Text="Pelicula" 
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"
+                VerticalOptions="EndAndExpand"
+                   Margin="12,10,30,10"/>
+
+
+                <Label Text="Titulo" 
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"
+                VerticalOptions="EndAndExpand"
+                   Margin="12,10,30,10"/>
+
+                <Label Text="Fecha"
+                   Margin="12,10,30,10"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"/>
+
+                <Label Text="Funcion" 
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"
+                VerticalOptions="EndAndExpand"
+                   Margin="12,10,30,10"/>
+
+
+                <Label Text="Cinema"
+                   Margin="12,10,30,10"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"/>
+
+                <Label Text="Sala"
+                   Margin="12,10,30,10"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"/>
+
+                <Label Text="Cuidad"
+                   Margin="12,10,30,10"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"/>
+
+                <Label Text="Tiquete"
+                   Margin="12"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"/>
+
+                <Label Text="Cantidad" 
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"
+                VerticalOptions="EndAndExpand"
+                   Margin="12,10,30,10"/>
+
+                <Label Text="Precio" 
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"
+                VerticalOptions="EndAndExpand"
+                   Margin="12,10,30,10"/>
+
+                <Label Text="Total a Pagar" 
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontFamily="Montserrat"
+                   FontAttributes="Bold"
+                VerticalOptions="EndAndExpand"
+                   Margin="12,10,30,10"/>
+               
+                <Button Text="Finalizar Compra"  
+                    VerticalOptions="EndAndExpand"
+                    CornerRadius="25" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
