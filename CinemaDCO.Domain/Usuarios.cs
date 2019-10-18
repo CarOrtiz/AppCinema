@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CinemaDCO.Domain
 {
-    class LoginRequest
+    class Usuarios
     {
         public string Usuario { get; set; }
         public string Password { get; set; }

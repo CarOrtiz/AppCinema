@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaDCO.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,9 @@ namespace CinemaDCO.Views
         public CarteleraPage()
         {
             InitializeComponent();
-            
+
+            lsvCartelera.ItemsSource = PeliculasServices.GetPeliculas();
+
         }
     }
 }

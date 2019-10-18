@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Resources;
 using System.Text;
+using Xamarin.Forms;
 
 namespace CinemaDCO.Helpers
 {
+    [ContentProperty("Text")]   
     class TraslateExtension
     {
         const string ResourceId = "CinemaDCO.Resources.AppResources";

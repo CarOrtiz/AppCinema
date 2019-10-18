@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CinemaDCO.Domain;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace CinemaDCO.Helpers
 
         { 
           HttpClient client = new HttpClient();
-          client.BaseAddress = new Uri("https://misapis.azurewebsites.net/api/Cartelera");
+          client.BaseAddress = new Uri(UriBase);
 
             var request = client.GetAsync(url).Result;
             if (request.IsSuccessStatusCode)
@@ -28,6 +29,11 @@ namespace CinemaDCO.Helpers
             };
 
             return default(T);  
+        }
+
+        internal static object Post<T>(string v, Usuarios usuario)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -9,7 +9,7 @@
         
    
         <StackLayout>
-            <ListView x:Name="lsvProductos" HasUnevenRows="True">
+        <ListView x:Name="lsvCartelera" HasUnevenRows="True" ItemSelected="lsvCartelera_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -29,14 +29,14 @@
                                     <RowDefinition />
                                 </Grid.RowDefinitions>
 
-                                <Image Source="{Binding Imagen}" Grid.Column="0" Grid.RowSpan="6" WidthRequest="50" HeightRequest="100"/>
+                                <Image Source="{Binding Imagen}" Grid.RowSpan="6" WidthRequest="50" HeightRequest="100"/>
 
-                                <Label Text="{Binding Nombre}" Grid.Column="1" Grid.Row="0" />
+                                <Label Text="{Binding Nombre}" Grid.Column="1" Grid.Row="1" />
                                 <Label Text="{Binding Estreno}" Grid.Column="1" Grid.Row="1" />
                                 <Label Text="{Binding Genero}" Grid.Column="1" Grid.Row="2" />
                                 <Label Text="{Binding Recomendacion}" Grid.Column="1" Grid.Row="3" />
                                 <Label Text="{Binding Duracion}" Grid.Column="1" Grid.Row="4" />
-                                <Label Text="{Binding Cinema}" Grid.Column="1" Grid.Row="5" />                              
+                                                            
                             
                             </Grid>
                         </ViewCell>

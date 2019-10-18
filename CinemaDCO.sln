@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{180396
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaDCO.Domain", "CinemaDCO.Domain\CinemaDCO.Domain.csproj", "{AB649089-65ED-44F0-BF6C-1D1669BBF571}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineDCO.Domain", "CineDCO.Domain\CineDCO.Domain\CineDCO.Domain.csproj", "{C14CDF76-4A09-46F7-AA94-EAFA13DC973B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{AB649089-65ED-44F0-BF6C-1D1669BBF571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB649089-65ED-44F0-BF6C-1D1669BBF571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB649089-65ED-44F0-BF6C-1D1669BBF571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C14CDF76-4A09-46F7-AA94-EAFA13DC973B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C14CDF76-4A09-46F7-AA94-EAFA13DC973B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C14CDF76-4A09-46F7-AA94-EAFA13DC973B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C14CDF76-4A09-46F7-AA94-EAFA13DC973B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

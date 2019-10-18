@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\CinemaDCO.Domain\CinemaDCO.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Resources\AppCinema.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
