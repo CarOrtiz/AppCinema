@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace CinemaDCO.Domain
 {
@@ -11,10 +12,8 @@ namespace CinemaDCO.Domain
         public string Recomendaciones { get; set; }
         public string Duracion { get; set; }
         public string Imagen { get; set; }
-        public List<Funcion> Funciones { get; set; }
+        
 
-        public string Sala { get; set; }
-        public string Ciudad { get; set; }
-        public int Precio { get; set; }
+        
     }
 }

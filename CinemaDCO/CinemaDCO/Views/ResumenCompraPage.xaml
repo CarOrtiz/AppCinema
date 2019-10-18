@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="CinemaDCO.Views.ResumenCompra"
-             Title="ResumenCompra">
+             Title="{i18n:Translate Resumen compra}">
     
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">

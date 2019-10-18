@@ -37,5 +37,7 @@ namespace CinemaDCO.Views
                 {
                     await DisplayAlert("Alerta", "La cantidad minima es 1", "Ok");
                 }
+            }
+        }
     }
 }
