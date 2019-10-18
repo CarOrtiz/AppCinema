@@ -31,7 +31,7 @@ namespace CinemaDCO.Views
 
                 if(cantidad > 0)
                 {
-                    await Navigation.PushAsync(new ResumenPage(item, cantidad, carte));
+                    await Navigation.PushAsync(new ResumenCompraPage(item, cantidad, carte));
                 }
                 else
                 {

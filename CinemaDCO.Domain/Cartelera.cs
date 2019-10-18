@@ -12,8 +12,8 @@ namespace CinemaDCO.Domain
         public string Recomendaciones { get; set; }
         public string Duracion { get; set; }
         public string Imagen { get; set; }
-        
+        public List<Funcion> Funciones { get; set; }
 
-        
+
     }
 }

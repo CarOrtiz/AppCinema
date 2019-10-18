@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CinemaDCO.Domain
 {
-    class Funcion
+   public class Funcion
     {
         public string Cinema { get; set; }
         public string Sala { get; set; }

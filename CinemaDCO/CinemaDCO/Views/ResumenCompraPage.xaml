@@ -4,9 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="CinemaDCO.Views.ResumenCompra"
-             Title="{i18n:Translate Resumen compra}">
-    
+             x:Class="CinemaDCO.Views.ResumenCompraPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
             <StackLayout Orientation="Vertical" >
@@ -23,7 +21,7 @@
                     </Grid.ColumnDefinitions>
                     <Image Source="{Binding Imagen} " Margin="39,30,30,30"/>
 
-                <Label Text="Pelicula" 
+                    <Label Text="Pelicula" 
                    HorizontalOptions="Center"
                    TextColor="Black"
                    FontSize="Large"
@@ -33,7 +31,7 @@
                    Margin="12,10,30,10"/>
 
 
-                <Label Text="Titulo" 
+                    <Label Text="Titulo" 
                    HorizontalOptions="Center"
                    TextColor="Black"
                    FontSize="Large"
@@ -49,7 +47,7 @@
                    FontFamily="Montserrat"
                    FontAttributes="Bold"/>
 
-                <Label Text="Fecha" 
+                    <Label Text="Fecha" 
                    HorizontalOptions="Center"
                    TextColor="Black"
                    FontSize="Large"

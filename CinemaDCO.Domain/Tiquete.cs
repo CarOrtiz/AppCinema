@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CinemaDCO.Domain
 {
-    class Tiquete
+    public class Tiquete
     {
         public int Precio { get; set; }
         public int Cantidad { get; set; }

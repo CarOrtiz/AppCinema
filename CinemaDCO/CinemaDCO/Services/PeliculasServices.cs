@@ -20,6 +20,7 @@ namespace CinemaDCO.Services
         }
     }
 
-    
-    
+    public class Permiso
+    {
+    }
 }

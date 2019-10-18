@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CinemaDCO.Domain
 {
-    class Permisos
+   public class Permisos
     {
         public Boolean EsPermitido { get; set; }
         public string Mensaje { get; set; }
