@@ -10,7 +10,7 @@
        <StackLayout Orientation="Vertical" Margin="55,120,50,140" Spacing="10">
         <Image Source="imagen2.png" HeightRequest="100"/>
         <Entry FontSize="Large" Placeholder="{i18n:Translate Usuario}" x:Name="TextUsuario" MaxLength="10"/>
-        <Entry FontSize="Large" Placeholder="{i18n:Translate Contraseña}"  IsPassword="True"  x:Name="TextPassword" IsPassword="True" MaxLength="10"/>
+        <Entry FontSize="Large" Placeholder="{i18n:Translate Contraseña}"  IsPassword="True"  x:Name="TextPassword" MaxLength="10"/>
         <Button Text="{i18n:Translate Ingresar}" Margin="0,0,50,0" VerticalOptions="EndAndExpand" CornerRadius="12" Clicked="login"/>
        </StackLayout>
     

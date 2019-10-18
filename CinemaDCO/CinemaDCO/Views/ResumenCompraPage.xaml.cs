@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaDCO.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,9 +24,9 @@ namespace CinemaDCO.Views
             funcion.BindingContext = func;
 
             Tiquete resumen = new Tiquete();
-            resumen.precio = func.Precio;
-            resumen.cantidad = cantid;
-            resumen.total = func.Precio * cantid;
+            resumen.Precio = func.Precio;
+            resumen.Cantidad = cantid;
+            resumen.TotalPago = func.Precio * cantid;
 
             tiquetes.BindingContext = resumen;
         }
