@@ -23,12 +23,12 @@ namespace CinemaDCO.Views
             datos.BindingContext = cartelera;
             funcion.BindingContext = func;
 
-            Tiquete resumen = new Tiquete();
-            resumen.Precio = func.Precio;
-            resumen.Cantidad = cantid;
-            resumen.TotalPago = func.Precio * cantid;
+            Tiquete tiquete = new Tiquete();
+            tiquete.Precio = func.Precio;
+            tiquete.Cantidad = cantid;
+            tiquete.TotalPago = func.Precio * cantid;
 
-            tiquetes.BindingContext = resumen;
+            tiquetes.BindingContext = tiquete;
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
